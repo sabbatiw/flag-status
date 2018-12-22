@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>flag-status API</title>
+  <meta name="author" content="sabbatiw">
+  <meta name="description" content="API for status of various flags">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="/flag-status/static/css/normalize.css">
+  <link rel="stylesheet" href="/flag-status/static/css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="https://www.countryflags.io/us/flat/16.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="ten columns offset-by-one" style="margin-top: 7%">
+        <h4>How should I display my flag?</h4>
+        <p>
+          This is an attempt to keep you up-to-date as to whether or not a flag 
+          should (officially) be flown at half- or full-mast. First, retrieve 
+          a <a href="/flag-status/flags/">list of supported flags</a>, and then request the 
+          <a href="/flag-status/flags/us/">status of a flag</a>. All responses are in valid 
+          <a href="https://json.org">json</a>.
+        </p>
+        <h4>Example API Request/Response</h4>
+        <pre><code>curl https://lab.seekup.nl/flag-status/flags/us/</code></pre>
+        <pre><code>{
+  "half_staff": false,
+  "message": "success",
+  "reason": "normal operations",
+  "until": "indefinitely"
+}       </code></pre>
+        <p>
+          Report issues or request support for additional flags on 
+          <a href="https://github.com/sabbatiw/flag-status/">github</a>.
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
