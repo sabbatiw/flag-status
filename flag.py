@@ -47,9 +47,9 @@ def usFlag():
     :return:    json response with status of US flag
     """
     return jsonify(
-        half_staff = True,
-        until      = "30 DEC 2018 at sunset",
-        reason     = "in honor of George H.W. Bush",
+        half_staff = False,
+        until      = "indefinitely",
+        reason     = "normal operations",
         message    = "success"
     )
 
