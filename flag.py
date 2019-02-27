@@ -23,7 +23,7 @@ def home():
 def listFlags():
     """
     This function responds to the URL
-    https://bluepale.net/flag-status/flags
+    https://bluepale.net/flag-status/flags/
 
     :return:    json response with array of available flags
     """
