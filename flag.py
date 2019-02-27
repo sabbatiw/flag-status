@@ -9,7 +9,7 @@ app = Flask(__name__, static_url_path="/flag-status/static")
 def home():
     """
     This function responds to the URL
-    lab.seekup.nl/flag-status/
+    https://bluepale.net/flag-status/
 
     :return:    the rendered template 'home.html'
     """
@@ -23,7 +23,7 @@ def home():
 def listFlags():
     """
     This function responds to the URL
-    lab.seekup.nl/flag-status/flags
+    https://bluepale.net/flag-status/flags
 
     :return:    json response with array of available flags
     """
@@ -42,7 +42,7 @@ def listFlags():
 def usFlag():
     """
     This function responds to the URL
-    lab.seekup.nl/flag-status/flags/us/
+    https://bluepale.net/flag-status/flags/us/
 
     :return:    json response with status of US flag
     """
@@ -61,7 +61,7 @@ def usFlag():
 def msFlag():
     """
     This function responds to the URL
-    lab.seekup.nl/flag-status/flags/ms/
+    https://bluepale.net/flag-status/flags/ms/
 
     :return:    json response with status of MS flag
     """
