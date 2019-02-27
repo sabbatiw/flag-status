@@ -1,5 +1,5 @@
 # flag-status
-flag-status API using Flask
+An unofficial US flag status API using Flask.  Hosted at [bluepale.net](https://bluepale.net/flag-status).
 
 #### How should I display my flag?
 
@@ -16,3 +16,5 @@ First, retrieve a [list of supported flags](https://bluepale.net/flag-status/fla
       "reason": "normal operations",
       "until": "indefinitely"
     }
+
+###### Submit an Issue to request support for an additional flag.
